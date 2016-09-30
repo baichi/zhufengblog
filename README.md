@@ -24,6 +24,7 @@ node_modules
 > node_modules 存放node依赖的框架
 > .idea 里webstorm的配置文件
 
+[commit](https://github.com/zhufengnodejs/zhufengblog/commit/2f3801b4a3339135b57de40dd941a3de9fc3664b)
 
 ## 2. 实现路由
 
@@ -35,3 +36,15 @@ node_modules
 |/user/sign_out|登出|
 |/article/add|发表文章|
 
+[commit](https://github.com/zhufengnodejs/zhufengblog/commit/32a3695be126ca95878aff1f95fc44fd8eb6a15c)
+
+
+## 3. 使用ejs模板
+app.js
+```diff
++ app.set('view engine','html');
++ app.set('views',path.join(__dirname,'views'));
++ app.engine('html',require('ejs').__express);
+```
+
+[commit]()

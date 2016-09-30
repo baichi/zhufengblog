@@ -1,8 +1,12 @@
 var express = require('express');
+var path = require('path');
 var index = require('./routes/index');
 var user = require('./routes/user');
 var article = require('./routes/article');
 var app = express();
+app.set('view engine','html');
+app.set('views',path.join(__dirname,'views'));
+app.engine('html',require('ejs').__express);
 app.use('/', index);
 app.use('/user', user);
 app.use('/article', article);
