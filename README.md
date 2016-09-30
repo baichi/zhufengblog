@@ -25,3 +25,13 @@ node_modules
 > .idea 里webstorm的配置文件
 
 
+## 2. 实现路由
+
+|路径|名称|
+|:-----|:-----|
+|/|首页|
+|/user/sign_up|用户注册|
+|/user/sign_in|用户登录|
+|/user/sign_out|登出|
+|/article/add|发表文章|
+
